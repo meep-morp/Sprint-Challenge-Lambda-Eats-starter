@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+body {
+  background: rgb(254,242,155);
+  background: linear-gradient(175deg, rgba(254,242,155,1) 17%, rgba(255,134,133,1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+form input {
+  margin: 20px;
+  padding: 5px;
+}
+
+form label {
+  font-size: 20px;
+  margin: 5px;
+}
+
+form select {
+  background-color: rgb(235, 217, 115);
+}
+
+.homepage{
+  text-align: center;
+  height: 100vh;
+}
+
+.order {
+  background: red;
   color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.gluten {
+  width: 80px;
+  height: 40px;
+  -webkit-appearance: none;
+  background-color: rgb(217, 218, 224);
+  outline: none;
+  transition: 0.5s;
+  box-shadow: 0 0 5px rgb(97, 95, 95);
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gluten:checked {
+  background-color: red;
+}
+
+.gluten:before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  top: 82.6%;
+  left: 46%;
+  background-color: aliceblue;
+  transition: 0.5s;
+  box-shadow: 0 0 5px rgb(97, 95, 95);
+}
+
+.gluten:checked:before{
+  left: 50%;
 }

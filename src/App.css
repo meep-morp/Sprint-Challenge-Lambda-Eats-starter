@@ -21,6 +21,10 @@ form label {
   margin: 5px;
 }
 
+.error {
+  color: red;
+}
+
 form select {
   background-color: rgb(235, 217, 115);
 }
@@ -60,7 +64,7 @@ form select {
   height: 40px;
   border-radius: 20px;
   color: white;
-  top: 82.6%;
+  top: 84.3%;
   left: 46%;
   background-color: aliceblue;
   transition: 0.5s;

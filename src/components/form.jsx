@@ -80,6 +80,8 @@ const Form = props => {
                 onClick={onSubmit}
             // disabled={disabled}
             >Place Order</button>
+
+            <Link to="/">-- Back</Link>
         </form>
     )
 }

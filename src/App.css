@@ -43,8 +43,8 @@ form select {
 }
 
 .gluten {
-  width: 80px;
-  height: 40px;
+  width: 70px;
+  height: 30px;
   -webkit-appearance: none;
   background-color: rgb(217, 218, 224);
   outline: none;
@@ -60,17 +60,17 @@ form select {
 .gluten:before {
   content: '';
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 20px;
   color: white;
-  top: 84.3%;
-  left: 46%;
+  top: 73.7%;
+  left: 46.8%;
   background-color: aliceblue;
   transition: 0.5s;
   box-shadow: 0 0 5px rgb(97, 95, 95);
 }
 
 .gluten:checked:before{
-  left: 50%;
+  left: 51%;
 }

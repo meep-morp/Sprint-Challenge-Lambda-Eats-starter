@@ -55,7 +55,6 @@ const App = () => {
         })
       })
       .catch(err => {
-        console.log(err)
         setErrors({
           ...error,
           [formName]: err.errors[0],
@@ -85,16 +84,18 @@ const App = () => {
     const newOrder = {
       name: order.name,
       size: order.size,
-      specialInt: order.specialInt,
+      specialInstructions: order.specialInt,
+      gluten: order.gluten,
       toppings: Object.keys(order.toppings)
         .filter(topping => order.toppings[topping] === true),
     }
 
     setOrder(initialFormValues);
-    setOrderSum(...orderSum, newOrder);
+    setOrderSum(...orderSum, newOrder)
     postNewOrder(newOrder);
     console.log("Submitted!");
     console.log(orderSum);
+    console.log(newOrder);
   }
 
   useEffect(() => {
